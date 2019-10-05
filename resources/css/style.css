@@ -26,6 +26,8 @@ header{
     top: 0;
     left: 0;
     height: 105px;
+    background-color: white;
+    z-index: 1;
 }
 
 main{
