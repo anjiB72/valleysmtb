@@ -72,6 +72,11 @@ main{
       left: 20%;
   }
 
+   #social-media{
+       position: absolute;
+       top: 30px;
+       right: 15px;
+   }
 
   .jumbotron{
       background-image: url(../images/36633-cwmcarn-forest-caerphilly-02.jpg);
