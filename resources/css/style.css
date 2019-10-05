@@ -36,6 +36,19 @@ main{
     left: 0;
     background-color: rgb(136,207,58);
 }
+
+footer {
+    background-color: rgb(46,45,45);
+    width: auto;
+    height: 53px;
+    padding: 0 0.7rem;
+    justify-content: flex-start;
+    align-items: center;
+}
+footer div p{
+    color: white;
+    font-size: 0.7rem;
+}
 p{
     font-size: 1rem;
 }
