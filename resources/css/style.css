@@ -118,6 +118,12 @@ h1{
       text-align: center;
   }
 
+  .about-us p{
+      padding: 0.5rem;
+      width: 90%;
+      margin: auto;
+  }
+
 .hidden {
     display: none;
 }
