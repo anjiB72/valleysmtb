@@ -36,7 +36,11 @@ main{
     left: 0;
     background-color: rgb(136,207,58);
 }
-
+section {
+    width: 100%;
+    margin: 0 auto;
+    height: auto; 
+}
 footer {
     background-color: rgb(46,45,45);
     width: auto;
@@ -129,6 +133,8 @@ h1{
 
   .about-us{
       text-align: center;
+      padding-bottom: 1rem;
+
   }
 
   .about-us p{
@@ -137,6 +143,13 @@ h1{
       margin: auto;
   }
 
+ .guided-rides {
+     background-image: url(../images/guided-rides.jpg);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;   
+     height: 300px;
+ }
 .hidden {
     display: none;
 }
