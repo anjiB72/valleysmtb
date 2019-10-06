@@ -69,11 +69,7 @@ h4{
     font-size: 1.4rem;
 }
 
-h3{
-    font-size: 1.5rem;
-}
 h2{ 
-    
     font-weight: 600;
 }
 h1{
@@ -149,7 +145,26 @@ h1{
      background-repeat: no-repeat;
      background-size: cover;   
      height: 300px;
+     border-radius: 4px;
  }
+
+ .guided-rides-text{
+     background-color: rgba(46,45,45,0.7);
+     height: 300px;
+     text-align: center;
+     color: white;
+     padding: 0.5rem;
+     border-radius: 4px;
+}
+
+.guided-rides-text h2{
+   padding: 1rem 0;
+}
+.guided-rides-text p{
+    width: 90%;
+    text-align: center;
+    margin: auto;
+}
 .hidden {
     display: none;
 }
