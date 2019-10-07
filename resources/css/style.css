@@ -149,7 +149,7 @@ h1{
  }
 
  .guided-rides-text{
-     background-color: rgba(46,45,45,0.7);
+     background-color: rgba(46,45,45,0.6);
      max-height: 400px;
      text-align: center;
      color: white;
@@ -157,10 +157,18 @@ h1{
      border-radius: 4px;
 }
 
-.guided-rides-text h2{
+.contact-us-text{
+    max-height: 400px;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+.guided-rides-text h2,
+.contact-us-text h2{
    padding: 1rem 0;
 }
-.guided-rides-text p{
+.guided-rides-text p,
+.contact-us-text p{
     width: 90%;
     text-align: center;
     margin: auto;
