@@ -44,8 +44,12 @@ section {
 footer {
     background-color: rgb(46,45,45);
     width: auto;
-    height: 53px;
-    padding: 0 0.7rem;
+    height: 90px;
+    padding: 0.7rem;
+    
+}
+
+.footer {
     justify-content: flex-start;
     align-items: center;
 }
