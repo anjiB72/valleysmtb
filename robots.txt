@@ -1,2 +1,2 @@
 User-agent: *
-Disallow: contact-us.html
+Disallow: contact_us.html
