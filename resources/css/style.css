@@ -323,3 +323,19 @@ a:hover{
     flex-direction: row;
 }
 
+/*GUIDE RIDES PAGE ADDITIONAL CSS*/
+.border {
+    border: 2px solid black;
+}
+.rides-layout{
+    margin: 1rem 0;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.rides-container{
+    width: 90%;
+    margin: 1rem auto;
+
+}
