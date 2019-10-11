@@ -81,6 +81,19 @@ h1{
     font-weight: 700;
 }
 
+a{
+    color: black;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+a:hover{
+    color: lightslategrey;
+    font-size: 1.4rem;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
 .hamburger {
     display: inline-block;
     cursor: pointer;
@@ -148,12 +161,33 @@ h1{
       display: block;
     }
 
-  .mob-menu a{
-      color: black;
-      font-weight: 600;
-      font-size: 1.5rem;
+  .menu{
+      display:none;
   }
+  @media only screen and (min-width: 790px){
+   .mobile-menu-container{
+          display: none;
+      }
+    #logo-img {
+        position: absolute;
+        top: 0px;
+        left: 15px; 
+    }
 
+    .menu{
+        display: block;
+        position: absolute;
+        top: 35px;
+        left: 200px;
+    }
+    .menu span{
+        padding-left:1.5rem;
+   }
+    .menu a{
+        font-weight: 
+    }
+
+  }
   
   .vm-container{
       text-align: center;
