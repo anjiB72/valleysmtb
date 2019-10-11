@@ -4,9 +4,6 @@ Blacks: rgb(38,37,36),   rgb(16,15,13)
 Greens: rgb(127,204,42), rgb(136,207,58)
 Cream: 
 */
-.border{
-    border: 0.5px solid red;
-}
 html{
     font-size: 16px;
 }
@@ -32,9 +29,18 @@ header{
 
 main{
     width: 100%;
-    margin-top: 105px;
     left: 0;
-    background-color: rgba(46,45,45,0.3);
+    background-color: white;
+}
+
+@media only screen and (min-width: 830px){
+    main{
+        max-width: 830px;
+        margin: auto;
+    }
+    .banner{
+        height: 500px;
+    }
 }
 section {
     width: 100%;
@@ -43,15 +49,17 @@ section {
 }
 footer {
     background-color: rgb(46,45,45);
-    width: auto;
-    height: 90px;
+    width: 100%;
+    height: 150px;
     padding: 0.7rem;
-    
 }
 
 .footer {
     justify-content: flex-start;
     align-items: center;
+    width: 100%;
+    height: 100px;
+    margin-left: 5px; 
 }
 footer div p{
     color: white;
@@ -84,7 +92,7 @@ h1{
 a{
     color: black;
     font-weight: 600;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 a:hover{
@@ -135,14 +143,8 @@ a:hover{
        position: absolute;
        top: 30px;
        right: 15px;
-   }
-
-  .banner{
-      background-image: url(../images/36633-cwmcarn-forest-caerphilly-02.jpg);
-      background-repeat: no-repeat;
-      background-position: center;
-      height: 300px;
-  }
+ }
+   
 
   .mob-menu{
       background-color: rgba(255,255,255,0.7);
@@ -161,13 +163,18 @@ a:hover{
       display: block;
     }
 
-  .menu{
+  .menu-container{
       display:none;
   }
+
+  /*MEDIA QUERY FOR NAVIGATION*/
   @media only screen and (min-width: 790px){
    .mobile-menu-container{
           display: none;
       }
+    .menu-container{
+        display: block;
+    }
     #logo-img {
         position: absolute;
         top: 0px;
@@ -181,28 +188,58 @@ a:hover{
         left: 200px;
     }
     .menu span{
-        padding-left:1.5rem;
+        padding-left:1rem;
    }
-    .menu a{
-        font-weight: 
+     #social-media img{
+         padding-right: 5px;
+     }
+
+     #social-media{
+         height: 105px;
+         margin: auto;
+     }
+     .banner{
+        background-image: url(../images/36633-cwmcarn-forest-caerphilly-02.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        max-height: 400px;
+    }
+  } /*END OF MEDIA QUERY*/
+
+#about-us{
+    background-color: rgb(136,207,58,1);
+    padding: 2rem 0;
+    margin-top:105px;
+}
+    #about-us p{
+        padding: 0.5rem;
+        width: 90%;
+        margin: auto;
+        font-size: 1.2rem;
     }
 
-  }
-  
+ @media only screen and (min-width: 830px){
+        main{
+            left: 0;
+            max-width: 830px;
+            margin: auto;
+        }
+       
+        section{
+            margin-bottom: 20px;
+        }
+        #about-us{
+            background-color: rgb(136,207,58,1);
+            padding: 2rem 0;
+            margin-top: 105px;
+        }
+    }
   .vm-container{
       text-align: center;
       max-height: 400px;
   }
 
-  #about-us{
-      background-color: rgb(136,207,58);
-      padding: 2rem 0;
-  }
-  #about-us p{
-      padding: 0.5rem;
-      width: 90%;
-      margin: auto;
-  }
+
 
  #guided-rides {
      background-image: url(../images/guided-rides.jpg);
@@ -229,16 +266,36 @@ a:hover{
     border-radius: 4px;
 }
 .guided-rides-text h2,
-.contact-us-text h2{
+.contact-us-text h2,
+.ride-it-rad h2{
+   width: 90%;
    padding: 1rem 0;
+   margin: auto;
 }
 .guided-rides-text p,
-.contact-us-text p{
+.contact-us-text p,
+.ride-it-rad p{
     width: 90%;
     text-align: center;
     margin: auto;
 }
 
+#ride-it-rad{
+    background-image: url("../images/rirlogo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    border-radius: 4px;
+}
+
+.ride-it-rad{
+    background-color: rgba(46,45,45,0.8);
+    text-align: center;
+    color: white;
+    padding: 2rem 0;
+    height: 300px;
+    border-radius: 4px;
+}
 .btn{
     margin: 2rem auto 1rem auto;
     width: 175px;
@@ -251,6 +308,10 @@ a:hover{
     .btn:hover{
         background-color: rgba(136,207,58,0.7);
     }
+.contact-us-text .btn{
+    background-color: rgba(46,45,45,1);
+    color: white;
+}
 
 .flex-row {
     display: flex;
