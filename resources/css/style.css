@@ -38,7 +38,7 @@ main{
 }
 
 @media only screen and (min-width: 830px){
-    main{
+    .main-home-container{
         max-width: 830px;
         margin: auto;
     }
@@ -68,21 +68,6 @@ footer {
 footer div p{
     color: white;
     font-size: 0.7rem;
-}
-p{
-    font-size: 1rem;
-}
-
-h6{
-    font-size: 1.1rem;
-}
-
-h5{
-    font-size: 1.2rem;
-}
-
-h4{
-    font-size: 1.4rem;
 }
 
 h2{ 
@@ -151,7 +136,7 @@ a:hover{
    
 
   .mob-menu{
-      background-color: rgba(255,255,255,0.7);
+      background-color: rgba(255,255,255,1);
       position: fixed;
       top: 105px;
       z-index: 300;
@@ -161,6 +146,7 @@ a:hover{
       padding-top: 3rem;
       display: none;
       transition: 1s;
+
   }
 
   .display {
@@ -223,7 +209,7 @@ a:hover{
     }
 
  @media only screen and (min-width: 830px){
-        main{
+        .main-home-container{
             left: 0;
             max-width: 830px;
             margin: auto;
@@ -272,14 +258,16 @@ a:hover{
 }
 .guided-rides-text h2,
 .contact-us-text h2,
-.ride-it-rad h2{
+.ride-it-rad h2,
+#rides-main-text h2{
    width: 90%;
    padding: 1rem 0;
    margin: auto;
 }
 .guided-rides-text p,
 .contact-us-text p,
-.ride-it-rad p{
+.ride-it-rad p,
+#rides-main-text p{
     width: 90%;
     text-align: center;
     margin: auto;
@@ -327,6 +315,7 @@ a:hover{
 .border {
     border: 2px solid black;
 }
+
 .rides-layout{
     margin: 1rem 0;
     flex-wrap: wrap;
@@ -338,4 +327,28 @@ a:hover{
     width: 90%;
     margin: 1rem auto;
 
+}
+
+.rides-container h4,
+.rides-container span{
+    
+    height: 2.5rem;
+    margin: auto;
+    
+}
+.rides-container h4 {
+    width: 75%;
+    padding-top: 0.5rem;
+}
+.rides-container span{
+    width: 25%;
+    text-align: right;
+}
+
+@media only screen and (min-width: 790px){
+    
+       .rides-container {
+        width: 25%;
+        margin: 1rem auto;
+    }
 }
