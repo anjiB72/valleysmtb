@@ -27,31 +27,61 @@
   <body>
     <!-- HEADER -->
     <header>
-      <nav class="mobile-menu-container flex-row">
-        <div class="mobile-menu">
-          <div class="hamburger" onclick="myFunction(this)">
+      <!--Mobile navigation-->
+      <nav class="flex-row">
+        <div class="mobile-menu-container">
+         <div class="hamburger" onclick="myFunction(this)">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
           </div>
-        </div>
         <div class="" id="logo-img">
           <img class="" src="./resources/images/FullColor_TransparentBg_1024x576_72dpi.png" height="100" alt="Valleys MTB Logo">
         </div>
         <div id="social-media">
-          <a href="https://www.instagram.com/Valleys_MTB/"><img src="./resources/images/instagram (1).png" height="40" alt="instagram icon"></a>
+            <a href="https://www.instagram.com/Valleys_MTB/"><img src="./resources/images/instagram (1).png" height="40" alt="instagram icon"></a>
+          </div>
+        <div class="mob-menu" id="mobile-menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="./guided_rides.html">Guided Rides</a></li>
+            <li><a href="./contact_us.html">Contact us</a></li>
+            <li><a href="https://www.facebook.com/pg/rideitrad/shop/?ref=page_internal">Ride it Rad Shop</a></li>
+          </ul>
         </div>
-
+        </div>
+<!--Larger screen menu-->
+        <div class="menu-container">
+          <div class="" id="logo-img">
+            <img class="" src="./resources/images/FullColor_TransparentBg_1024x576_72dpi.png" height="100" alt="Valleys MTB Logo">
+          </div>
+          <div class="menu" id="menu">
+                <span><a href="index.html">Home</a></span>
+                <span><a href="./guided_rides.html">Guided Rides</a></span>
+                <span><a href="./contact_us.html">Contact us</a></span>
+                
+              </ul>
+            </div>
+          <div id="social-media">
+            <a href="https://www.facebook.com/pg/rideitrad/shop/?ref=page_internal" target="_blank"><img src="./resources/images/rirlogo.png" alt="Ride it Rad logo" width="55"></a>
+            <a href="https://www.instagram.com/Valleys_MTB/"><img src="./resources/images/instagram (1).png" height="40" alt="instagram icon"></a>
+          </div>
+        </div>
       </nav>
-      <div class="mob-menu" id="mobile-menu">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="./guided_rides.html">Guided Rides</a></li>
-          <li><a href="./contact_us.html">Contact us</a></li>
-        </ul>
-      </div>
     </header>
-    <main>
+    <main id="rides">
+      <div class="vm-container" id="rides-main-text">
+        <h2>Guided Rides</h2>
+        <p><strong>Dates for 2020 coming soon!</strong><br><br>
+          Keep an eye on the website or if you would like to receive an email when dates are available please register for our mailing list below.</p>
+        <form action="">
+          <input type="text" id="mailing-register" value="Enter Email Address"><button>Submit</button>
+        </form>
+      </div>
+      <div class="rides flex-row">
+
+
+      </div>
 
     </main>
 
