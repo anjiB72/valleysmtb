@@ -17,6 +17,13 @@ body {
     padding: 0;
 }
 
+main{
+    width: 100%;
+    margin-top: 105px;
+    margin-left: 0;
+    background-color: white;
+}
+
 h2{ 
     font-weight: 600;
 }
@@ -156,44 +163,30 @@ header{
 
 
 /*HOME PAGE STYLING*/
-main{
-    width: 100%;
-    left: 0;
-    background-color: white;
-}
 
-    section {
-        width: 100%;
-        margin: 0 auto;
-        height: auto; 
-    }
-    #about-us{
-        background-color: rgb(136,207,58,1);
-        padding: 2rem 0;
-        margin-top:105px;
-    }
-        #about-us p{
-            padding: 0.5rem;
-            width: 90%;
-            margin: auto;
-            
+        .full-width-container {
+            width: 100%;
+            margin: 0 auto;
+            height: auto; 
         }
+
+            #about-us{
+                background-color: rgb(136,207,58,1);
+                padding: 2rem 0;
+                text-align: center;
+            }
+            #about-us p{
+                padding: 0.5rem;
+                width: 90%;
+                margin: auto; 
+            }
     
-        .vm-container{
+        .vm-layout-container{
             text-align: center;
-            max-height: 400px;
+            height: auto;
         }
-
-        #guided-rides {
-        background-image: url(../images/guided-rides.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;   
-        height: auto;
-        border-radius: 4px;
-        }
-
-        .guided-rides-text{
+           
+        .vm-content-text{
         background-color: rgba(46,45,45,0.6);
         text-align: center;
         color: white;
@@ -201,46 +194,61 @@ main{
         padding: 2rem 0;
         max-height: 400px;
         }
+         
 
-        .contact-us-text{
-        max-height: 400px;
-        text-align: center;
-        padding: 0.5rem;
-        border-radius: 4px;
-        }
-        .guided-rides-text h2,
-        .contact-us-text h2,
-        .ride-it-rad h2,
-        #rides-main-text h2{
+        .vm-content-text h2
+        {
         width: 90%;
         padding: 1rem 0;
         margin: auto;
         }
-        .guided-rides-text p,
-        .contact-us-text p,
-        .ride-it-rad p,
-        #rides-main-text p{
+
+        .vm-content-text p
+        {
         width: 90%;
         text-align: center;
         margin: auto;
         }
 
-        #ride-it-rad{
-        background-image: url("../images/rirlogo.png");
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 300px;
-        border-radius: 4px;
-        }
+            #guided-rides {
+            background-image: url(../images/guided-rides.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;   
+            height: auto;
+            border-radius: 4px;
+            }
 
-        .ride-it-rad{
-        background-color: rgba(46,45,45,0.8);
-        text-align: center;
-        color: white;
-        padding: 2rem 0;
-        height: 300px;
-        border-radius: 4px;
-        }
+            #contact-us-text{
+            background-color: white;
+            color: rgba(0,0,0,1);
+            max-height: 400px;
+            text-align: center;
+            padding: 0.5rem;
+            border-radius: 4px;
+            }
+
+            #contact-us-text p{
+                font-weight: 500;
+            }
+
+            #ride-it-rad{
+            background-image: url("../images/rirlogo.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 300px;
+            border-radius: 4px;
+            }
+
+            #ride-it-rad-text{
+            background-color: rgba(46,45,45,0.8);
+            text-align: center;
+            color: white;
+            padding: 2rem 0;
+            height: 300px;
+            border-radius: 4px;
+            }
+
         .btn{
         margin: 2rem auto 1rem auto;
         width: 175px;
@@ -253,10 +261,13 @@ main{
         .btn:hover{
             background-color: rgba(136,207,58,0.7);
         }
-        .contact-us-text .btn{
-        background-color: rgba(46,45,45,1);
-        color: white;
-        }
+            #contact-us .btn{
+            background-color: rgba(46,45,45,1);
+            color: white;
+            }
+            #contact-us .btn:hover{
+                background-color: rgba(136,207,58,1);
+            }
 
     /*HOME PAGE MEDIA QUERIES*/
     @media only screen and (min-width: 790px){
@@ -269,25 +280,23 @@ main{
     } 
 
     @media only screen and (min-width: 830px){
-        .main-home-container{
+        .vm-layout-container{
             left: 0;
             max-width: 830px;
             margin: auto;
         }
 
-        section{
+        .vm-content{
             margin-bottom: 20px;
         }
 
         #about-us{
-            background-color: rgb(136,207,58,1);
-            padding: 2rem 0;
-            margin-top: 105px;
-            font-size: 1.2rem;
+           font-size: 1.2rem;
         }
 
         .banner{
             height: 500px;
+            margin-bottom: 20px;
         }
     }
 
@@ -295,15 +304,15 @@ main{
 footer {
     background-color: rgb(46,45,45);
     width: 100%;
-    height: 150px;
+    height: auto;
     padding: 0.7rem;
 }
     .footer {
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        height: 100px;
-        margin: 0 1rem; 
+        height: 75px;
+        margin: auto 1rem; 
     }
     .footer p{
         color: white;
@@ -316,9 +325,16 @@ footer {
         margin: 0;
         padding-right: 2rem;
     }
-    #siteseal {
-        padding-right: 2rem;
-    }
+        #bcl2{
+            margin-right: 2rem;
+        }
+        #copyright{
+            text-align: center;
+            height: 50px;
+            margin: auto;
+            padding-top: 1rem;
+        }
+
 
     @media only screen and (min-width: 770px){
         .footer p,
