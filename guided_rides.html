@@ -23,58 +23,55 @@
   <link rel="stylesheet" href="./resources/css/style.css" type="text/css" />
   <!-- Add icon library -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body>
   <!-- PAGE HEADER -->
   <header>
-    <!--Mobile navigation-->
-    <nav class="flex-row">
-      <div class="mobile-menu-container">
-        <div class="hamburger" onclick="myFunction(this)">
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
-        </div>
+      <!--Mobile navigation-->
+      <nav class="flex-row">
+        <div class="mobile-menu-container">
+         <div class="hamburger" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
         <div class="" id="logo-img">
-          <img class="" src="./resources/images/FullColor_TransparentBg_1024x576_72dpi.png" height="100"
-            alt="Valleys MTB Logo">
+          <img class="" src="./resources/images/FullColor_TransparentBg_1024x576_72dpi.png" height="100" alt="Valleys MTB Logo">
         </div>
         <div id="social-media">
-          <a href="https://www.instagram.com/Valleys_MTB/"><img src="./resources/images/instagram (1).png" height="40"
-              alt="instagram icon"></a>
-        </div>
+            <a href="https://www.instagram.com/Valleys_MTB/"><img src="./resources/images/instagram (1).png" height="40" alt="instagram icon"></a>
+          </div>
         <div class="mob-menu" id="mobile-menu">
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="./guided_rides.html">Guided Rides</a></li>
-            <li><a href="./contact_us.html">Contact us</a></li>
+            <li class="hidden"><a href="./contact_us.html">Contact us</a></li>
             <li><a href="https://www.facebook.com/pg/rideitrad/shop/?ref=page_internal">Ride it Rad Shop</a></li>
           </ul>
         </div>
-      </div>
-      <!--Desktop menu-->
-      <div class="menu-container">
-        <div class="" id="logo-img">
-          <img class="" src="./resources/images/FullColor_TransparentBg_1024x576_72dpi.png" height="100"
-            alt="Valleys MTB Logo">
         </div>
-        <div class="menu" id="menu">
-          <span><a href="index.html">Home</a></span>
-          <span><a href="./guided_rides.html">Guided Rides</a></span>
-          <span><a href="./contact_us.html">Contact us</a></span>
-
-          </ul>
+<!--Larger screen menu-->
+        <div class="menu-container">
+          <div class="" id="logo-img">
+            <img class="" src="./resources/images/FullColor_TransparentBg_1024x576_72dpi.png" height="100" alt="Valleys MTB Logo">
+          </div>
+          <div class="menu" id="menu">
+                <span><a href="index.html">Home</a></span>
+                <span><a href="./guided_rides.html">Guided Rides</a></span>
+                <span class="hidden"><a href="./contact_us.html">Contact us</a></span>
+                <span><a href="https://www.facebook.com/pg/rideitrad/shop/?ref=page_internal">Ride it Rad Shop</a></span>
+                
+              </ul>
+            </div>
+          <div id="social-media">
+            <a href="https://www.facebook.com/pg/rideitrad/shop/?ref=page_internal" target="_blank"><img src="./resources/images/rirlogo.png" alt="Ride it Rad logo" width="55"></a>
+            <a href="https://www.instagram.com/Valleys_MTB/"><img src="./resources/images/instagram (1).png" height="40" alt="instagram icon"></a>
+          </div>
         </div>
-        <div id="social-media">
-          <a href="https://www.facebook.com/pg/rideitrad/shop/?ref=page_internal" target="_blank"><img
-              src="./resources/images/rirlogo.png" alt="Ride it Rad logo" width="55"></a>
-          <a href="https://www.instagram.com/Valleys_MTB/"><img src="./resources/images/instagram (1).png" height="40"
-              alt="instagram icon"></a>
-        </div>
-      </div>
-    </nav>
-  </header>
+      </nav>
+    </header>
 
   <!--MAIN CONTENT AREA-->
   <main id="rides">
@@ -219,32 +216,23 @@
 
     <div class="full-width-container" id="news">
       <h4><strong>Dates for 2020 coming soon!</strong></h4><br>
-      <p>Keep an eye on the website or register your email address below for updates.</p>
-      <form id="register-form" method="post" action="form-to-email.php">
-        <input type="text" for="email" name="mailing-register" id="mailing-register" placeholder="Your email address..">
-        <input type="submit" name='register'id="mailing-register-button" value="Register">
-      </form>
+      <p>Keep an eye on the website or email us at <a href="mailto:rides@valleysmtb.co.uk">rides@valleysmtb.co.uk</a> to be added to our 
+      mailing register.</p>
+      
   </div>
   </main>
   <!--PAGE FOOTER-->
   <footer>
-    <div class="flex-row footer">
-      <div>
-        <ul>
-          <a href="">
-            <li>Privacy Policy</li>
-          </a>
-          <a href="./resources/policies/cookie.html">
-            <li>Cookie Policy</li>
-          </a>
-        </ul>
+      <div class="flex-row footer">
+        <div>
+           <p>Contact us at <a href="mailto:rides@valleysmtb.co.uk">rides@valleysmtb.co.uk</a></p>
+          
+        </div>
+        <div id="bcl2"><img src="./resources/images/bcL2.png" alt="" width="125" height="75"></div>
       </div>
-      <div id="bcl2"><img src="./resources/images/bcL2.png" alt="" width="125" height="75"></div>
-    </div>
-    <div class="footer" id="copyright">
-      <p><strong>Valleys MTB</strong> &copy 2019 All Rights Reserved</p>
-    </div>
-  </footer>
+      <div class="footer" id="copyright"><p><strong>Valleys MTB</strong> &copy 2019 All Rights Reserved</p></div>      
+    </footer>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="./resources/js/script.js" type="text/javascript"></script>
 </body>
 

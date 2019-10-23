@@ -3,7 +3,7 @@
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // access
-        $secretKey = '___enter_secret_key___';
+        $secretKey = '6LduHr8UAAAAAJmfSt2V4Ugv6A4tZ6eXwWoahnIW';
         $captcha = $_POST['g-recaptcha-response'];
 
         if(!$captcha){
@@ -11,23 +11,17 @@
           exit;
         }
 
-        # FIX: Replace this email with recipient email
-        $mail_to = "demo@gmail.com";
-        
-        # Sender Data
-        $subject = trim($_POST["subject"]);
-        $name = str_replace(array("\r","\n"),array(" "," ") , strip_tags(trim($_POST["name"])));
-        $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
-        $phone = trim($_POST["phone"]);
-        $message = trim($_POST["message"]);
-        
-        if ( empty($name) OR !filter_var($email, FILTER_VALIDATE_EMAIL) OR empty($phone) OR empty($subject) OR empty($message)) {
-            # Set a 400 (bad request) response code and exit.
-            http_response_code(400);
-            echo '<p class="alert alert-warning">Please complete the form and try again.</p>';
-            exit;
-        }
+        #Data captured from contact form
+        $name = $_POST["name"];
+        $email = $_POST["email"];
+        $enquiryType = $_POST["enquiry-type"];
+        $message = $_POST["subject"];
 
+        #recipient email
+        $mail_to = "rides@valleysmtb.co.uk";
+            
+       
+    
         $ip = $_SERVER['REMOTE_ADDR'];
         $response=file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$secretKey."&response=".$captcha."&remoteip=".$ip);
         $responseKeys = json_decode($response,true);
@@ -38,7 +32,7 @@
             # Mail Content
             $content = "Name: $name\n";
             $content .= "Email: $email\n\n";
-            $content .= "Phone: $phone\n";
+            $content .= "Enquiry: $enquiryType\n";
             $content .= "Message:\n$message\n";
 
             # email headers.
