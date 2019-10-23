@@ -359,7 +359,7 @@ footer {
     }
 
     #rides-main-text{
-        background-color: rgb(136,207,58,1);
+        background-color: rgba(136,207,58,1);
         padding: 2rem;
         text-align: center;
     }
@@ -399,7 +399,6 @@ footer {
     .rides-title .fa{
         width: 25%;
     }
-
   
     .ride-info {
         font-size: 0.9rem;
@@ -437,16 +436,38 @@ footer {
     #rides-layout .active .accordian-content{
         display: block;
     }
+
+    #rides-layout .active .rides-title{
+        background-color: rgba(136,207,58,1);
+        color:  rgba(46,45,45,1);
+  
+    } 
+
+
     @media only screen and (min-width: 800px){
         
         .rides-container {
-            width: 29%;
-            margin: 1rem auto;
+            width: 30%;
+            margin: 0.5rem;
+            background-color:  rgba(46,45,45,0.1);
+            border-radius: 4px;
+            
         }
 
         .ride-info {
             font-size: 0.9rem;
-            padding: 0.9rem 1.5rem;
-            min-height: 250px; 
+            padding: 0.9rem 0.5rem;
+            min-height: 300px; 
         }
+
+        #rides-layout .accordian-content{
+            display: block;
+        }
+
+        #rides-layout .active .rides-title{
+            background-color: rgba(46,45,45,1);
+            color: white;
+      
+        } 
+
     }
