@@ -29,9 +29,7 @@ function myFunction(x) {
     for (var i = 0, len = allPanelElems.length; i < len; i++){
          allPanelElems[i].addEventListener("click", handlePanelClick);
     }
-    //By Default Show first panel
-    showPanel(allPanelElems[0])
+
   }
   initAccordion(document.getElementById("rides-layout"));
 
-  
