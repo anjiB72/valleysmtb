@@ -72,7 +72,64 @@
        
       </header>
     <main id="contact">
- 
+        <div class="full-width-container" id="contact-us-title">
+            <h2>Get In Touch</h2>
+          </div>
+
+        <div class="form-container">
+            <p>If you have a question about our rides, have a specific date in mind or would like to book us for something more bespoke,
+              please complete and submit the contact form below.
+            </p>
+            <form action="action_page.php">
+              <div class="row">
+                <div class="col-25">
+                  <label for="fname">First Name</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="lname">Last Name</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                </div>
+              </div>
+              <div class="row">
+                  <div class="col-25">
+                    <label for="email">Email Address</label>
+                  </div>
+                  <div class="col-75">
+                    <input type="text" id="email" name="email-address" placeholder="Your email address..">
+                  </div>
+                </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="enquiry-type">What is your enquiry about?</label>
+                </div>
+                <div class="col-75"> 
+                    <input type="radio" name="enquiry-type" value="discovery">  Cwmcarn Discovery<br>
+                    <input type="radio" name="enquiry-type" value="epic">  Cwmcarn Epic<br>
+                    <input type="radio" name="enquiry-type" value="off-piste">  Two Castles Off-Piste<br>
+                    <input type="radio" name="enquiry-type" value="bespoke">  Bespoke rides<br>
+                    <input type="radio" name="enquiry-type" value="other">  Other<br>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="subject">Further details</label>
+                </div>
+                <div class="col-75">
+                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                </div>
+              </div>
+              <div class="row">
+                <input type="submit" value="Submit">
+              </div>
+            </form>
+          </div>
       
     </main>
 <!--FOOTER-->

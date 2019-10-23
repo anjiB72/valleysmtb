@@ -29,7 +29,7 @@ function myFunction(x) {
     for (var i = 0, len = allPanelElems.length; i < len; i++){
          allPanelElems[i].addEventListener("click", handlePanelClick);
     }
-
   }
+  
   initAccordion(document.getElementById("rides-layout"));
 
