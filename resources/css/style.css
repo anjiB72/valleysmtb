@@ -358,12 +358,13 @@ footer {
         border: 2px solid black;
     }
 
-    #rides-main-text{
+    #rides-main-text,
+    #news {
         background-color: rgba(136,207,58,1);
         padding: 2rem;
         text-align: center;
     }
-    #rides-main-text p{
+    #news p{
         padding-bottom: 1rem;
     }
 
