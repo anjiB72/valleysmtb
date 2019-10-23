@@ -51,6 +51,10 @@ a{
         flex-direction: row;
     }
 
+    .hidden{
+        display: none;
+    }
+
 /*HEADER STYLING - ALL PAGES*/
 header{
     width: 100%;
@@ -356,43 +360,47 @@ footer {
 
     #rides-main-text{
         background-color: rgb(136,207,58,1);
-        padding-bottom: 2rem;
+        padding: 2rem;
+        text-align: center;
     }
     #rides-main-text p{
         padding-bottom: 1rem;
     }
 
-    .rides-layout{
+    #rides-layout{
         margin: 1rem 0;
         flex-wrap: wrap;
         width: 100%;
         justify-content: space-around;
     }
+   
+    .rides-container{
+        width: 100%;
+        margin: 0.5rem auto ;
+    }
 
     .rides-title{
+        height: 3rem;
         background-color: rgba(46,45,45,1);
         color: white;
-    }
-    .rides-container{
-        width: 90%;
-        margin: 0 auto ;
-    }
+        border-radius: 4px;
 
-    .rides-container h4,
-    .rides-container span{
+    }
+    .rides-title h4,
+    .rides-title span{
         font-size: 1.2rem;
-        height: 2.5rem;
         margin: auto;
         
     }
     .rides-container h4 {
         font-weight: 600;
-        width: 75%;
-        padding-top: 0.5rem;
+        width: 75%; 
     }
-    .rides-container .fa{
+    .rides-title .fa{
         width: 25%;
     }
+
+  
     .ride-info {
         font-size: 0.9rem;
         padding: 0.5rem 1.2rem;
@@ -412,19 +420,22 @@ footer {
         margin-bottom: 2rem;  
     }
 
-    tr{
-
-    }
     td{
         font-size: 0.7rem;
         padding: 0 1rem;
-    }
-
-    td{
         width: 30%;
     }
+
     .headings td{
         font-weight: 600;
+    }
+
+    #rides-layout .accordian-content{
+        display: none;
+    }
+
+    #rides-layout .active .accordian-content{
+        display: block;
     }
     @media only screen and (min-width: 800px){
         
