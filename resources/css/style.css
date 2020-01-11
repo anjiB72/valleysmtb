@@ -680,7 +680,7 @@ footer {
   }
   
   /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
+  @media only screen and (max-width: 600px) {
     .col-25, .col-75, .form-container input[type=submit] {
       width: 100%;
       margin-top: 0;
@@ -701,4 +701,64 @@ footer {
     .g-recaptcha {
         width: auto;
         margin: auto;
+    }
+
+
+    .parallax  {
+        width: 90%;
+        margin: auto;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #image1 {
+        background-image: url('../images/IMG_20191225_122116.jpg');
+        height: 80vh;
+    }
+
+    #image2 {
+        background-image: url('../images/IMG_20191101_12345.jpg');
+        height: 80vh;
+
+    }
+
+    #image3 {
+        background-image: url('../images/IMG_20191102_115610.jpg');
+        height: 80vh;
+    }
+    #image4 {
+        background-image: url('../images/IMG_20191225_121037.jpg');
+        height: 80vh;
+    }
+
+    .galleryText {
+        padding: 1.5rem 0.5rem;
+        border-radius: 5px;
+        background-color: rgba(46,45,45,1) ;
+        color: white;
+    }
+
+    .galleryText a {
+        color: white;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    .galleryText a:hover{
+        color: rgba(136,207,58,1);
+        font-size: 1.2rem;
+    }
+
+    @media only screen and (max-width: 800px) {
+    
+        .parallax {
+            width: 100%;
+            background-attachment: scroll;
+        }
+
+        #image1, #image2, #image3, #image4 {
+          height: 25vh;
+        }
     }
