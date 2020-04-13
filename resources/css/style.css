@@ -360,6 +360,15 @@ footer {
         }
     }
 
+    @media only screen and (max-width: 476px){
+        #bcl2 {
+            display: none;
+        }
+        .footer {
+            display: block;
+        }
+    }
+
 /*GUIDE RIDES PAGE ADDITIONAL CSS*/
 
     #rides,
@@ -388,7 +397,7 @@ footer {
     }
 
     #rides-layout{
-        margin: 0.2rem 0;
+        margin: 0.2rem 0 0 0;
         flex-wrap: wrap;
         width: 100%;
         justify-content: space-around;
@@ -595,6 +604,32 @@ footer {
             color:  rgba(46,45,45,1);
           }
 
+    }
+
+    .ride-info a {
+        font-size: 0.9rem;
+    }
+
+    .book {
+        border-radius: 4px;
+        background-color: rgba(46,45,45,1.0);
+        border: none;
+        color: white;
+        height: 1.5rem;
+        font-size: 1rem;
+        text-align: center;
+        margin: auto;
+    }
+
+    .book:hover {
+        background-color: rgba(136,207,58,1);
+        color: rgba(46,45,45,1);
+    }
+
+    .cancelled
+    {
+        background-color: red !important;
+        color: white !important;
     }
 
     /*COOKIES CSS*/
